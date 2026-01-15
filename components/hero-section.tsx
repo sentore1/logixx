@@ -114,7 +114,7 @@ export default function HeroSection() {
                                             transition: {
                                                 staggerChildren: 0.05,
                                                 delayChildren: 0.75,
-                                            },
+                                            } as any,
                                         },
                                     },
                                     ...transitionVariants,
