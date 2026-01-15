@@ -20,7 +20,7 @@ const transitionVariants = {
             filter: 'blur(0px)',
             y: 0,
             transition: {
-                type: 'spring',
+                type: 'spring' as const,
                 bounce: 0.3,
                 duration: 1.5,
             },
@@ -114,7 +114,7 @@ export default function HeroSection() {
                                             transition: {
                                                 staggerChildren: 0.05,
                                                 delayChildren: 0.75,
-                                            } as any,
+                                            },
                                         },
                                     },
                                     ...transitionVariants,
