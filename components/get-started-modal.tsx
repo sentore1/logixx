@@ -3,15 +3,15 @@ import { useState } from 'react'
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
-import { GraduationCap, Briefcase, Plane, Car, BookOpen, Globe } from 'lucide-react'
+import { Plane, Ship, Truck, Warehouse, Package, Calculator } from 'lucide-react'
 
 const services = [
-    { name: 'Immigration Services', icon: Globe, href: '/immigration/work-permit' },
-    { name: 'Study Abroad', icon: GraduationCap, href: '/study-abroad/canada' },
-    { name: 'Job Seekers', icon: Briefcase, href: '/job-seekers/canada' },
-    { name: 'Language Test', icon: BookOpen, href: '/language-test/ielts' },
-    { name: 'Flight Booking', icon: Plane, href: '/flight-booking' },
-    { name: 'Car Rental', icon: Car, href: '/car-rental' },
+    { name: 'Air Freight', icon: Plane, href: '/services/air-freight' },
+    { name: 'Sea Freight', icon: Ship, href: '/services/sea-freight' },
+    { name: 'Road Transport', icon: Truck, href: '/services/road-transport' },
+    { name: 'Warehousing', icon: Warehouse, href: '/services/warehousing' },
+    { name: 'Track Shipment', icon: Package, href: '/track' },
+    { name: 'Freight Calculator', icon: Calculator, href: '/calculator' },
 ]
 
 export function GetStartedModal({ open, onOpenChange }: { open: boolean; onOpenChange: (open: boolean) => void }) {

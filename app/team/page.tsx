@@ -9,15 +9,15 @@ import { useState } from 'react'
 export default function TeamPage() {
     const teamMembers = [
         {
-            name: "1. Iradukunda Olivier - Co-founder & Managing Director",
-            position: "Managing Director",
+            name: "Rugema Manzi Appolinaire",
+            position: "Technical Coordinator",
             background: "Committed to delivering exceptional customer service and building lasting relationships with clients across the region.",
             image1: "/team/4.jpg",
             image2: "/team/44.jpg"
         },
         {
-            name: "2. Igiraneza Jacques - Co-founder & Director of Operations",
-            position: "Director of Operations",
+            name: "Uwera Liliane",
+            position: "Sales Coordinator",
             background: "15+ years of logistics expertise across East Africa. Passionate about connecting businesses through innovative supply chain solutions.",
             image1: "/team/1.jpg",
             image2: "/team/11.jpg"

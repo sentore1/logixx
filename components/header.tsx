@@ -137,12 +137,13 @@ export const HeroHeader = () => {
                                             {item.submenu && item.submenu.length > 0 && (
                                                 <ul className="ml-4 mt-2 space-y-2">
                                                     {item.submenu.map((subitem, subindex) => (
-                                                        <Link
-                                                            key={subindex}
-                                                            href={subitem.href}
-                                                            className="text-muted-foreground hover:text-black hover:bg-yellow-400 active:bg-gray-200 block text-xs duration-150 px-3 py-2 rounded">
-                                                            {subitem.name}
-                                                        </Link>
+                                                        <li key={subindex}>
+                                                            <Link
+                                                                href={subitem.href}
+                                                                className="text-muted-foreground hover:text-black hover:bg-yellow-400 active:bg-gray-200 block text-xs duration-150 px-3 py-2 rounded">
+                                                                {subitem.name}
+                                                            </Link>
+                                                        </li>
                                                     ))}
                                                 </ul>
                                             )}
